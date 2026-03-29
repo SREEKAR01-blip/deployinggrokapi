@@ -9,6 +9,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.json({ status: 'Self-Improving Agent Backend is running beautifully! 🚀' });
+});
+
 app.post('/api/loop', async (req, res) => {
     try {
         const { prompt } = req.body;

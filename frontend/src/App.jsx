@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Play, Sparkles, Code2, Cpu, Loader2, CheckCircle2 } from 'lucide-react';
 import axios from 'axios';
 
-const SERVER_URL = 'http://localhost:3001';
+const SERVER_URL = 'https://agent-w1bu.vercel.app';
 
 const VersionCard = ({ version }) => {
   return (
