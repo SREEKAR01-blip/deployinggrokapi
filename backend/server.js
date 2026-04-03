@@ -1,9 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const { runLoop } = require('./agent.js');
 
 dotenv.config();
+
+const { runLoop } = require('./agent.js');
 
 const app = express();
 app.use(cors());
