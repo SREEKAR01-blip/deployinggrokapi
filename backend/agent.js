@@ -2,11 +2,11 @@ const { OpenAI } = require('openai');
 const axios = require('axios');
 
 const openai = new OpenAI({
-    baseURL: 'https://api.x.ai/v1',
-    apiKey: process.env.XAI_API_KEY,
+    baseURL: 'https://api.groq.com/openai/v1',
+    apiKey: process.env.GROQ_API_KEY,
 });
 
-const MODEL_NAME = 'grok-beta';
+const MODEL_NAME = 'llama-3.3-70b-versatile';
 const BRIGHTDATA_API_KEY = process.env.BRIGHTDATA_API_KEY || 'efd09440-e543-4c14-8f27-7a77b5b1fd9e';
 
 async function fetchContext(prompt) {
