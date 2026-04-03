@@ -2,11 +2,11 @@ const { OpenAI } = require('openai');
 const axios = require('axios');
 
 const openai = new OpenAI({
-    baseURL: 'https://api.featherless.ai/v1',
-    apiKey: process.env.FEATHERLESS_API_KEY || 'rc_3e1e7518dcc3234af9f40bc173e3d39d4962e6551da8c4611a471ff592bc4571',
+    baseURL: 'https://api.x.ai/v1',
+    apiKey: process.env.XAI_API_KEY,
 });
 
-const MODEL_NAME = 'Qwen/Qwen2.5-7B-Instruct';
+const MODEL_NAME = 'grok-beta';
 const BRIGHTDATA_API_KEY = process.env.BRIGHTDATA_API_KEY || 'efd09440-e543-4c14-8f27-7a77b5b1fd9e';
 
 async function fetchContext(prompt) {
